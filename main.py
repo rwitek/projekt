@@ -6,7 +6,7 @@ app = Flask(__name__)
 def hello_name(name):
     return 'Hello %s!' % name
 
-@app.route('/products')
+@app.route('/')
 def products():
     product_list = ["Apple", "Banana", "Orange"]
     html = "<h1>Lista produktów</h1><ul>"
